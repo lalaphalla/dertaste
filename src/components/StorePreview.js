@@ -5,7 +5,7 @@ import imgBubble from '../assets/categoires/bubble-tea.png'
 export default function StorePreview() {
 
     return (
-        <section className='grid grid-cols-3 gap-4'>
+        <section className='grid grid-cols-3 gap-4 '>
             <div className='grid col-span-2'>
                 <div className=' '>
                     <img className='h-auto max-w-full rounded-lg' src={imgMixue} alt='preview 1' />

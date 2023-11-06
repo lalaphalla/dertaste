@@ -1,6 +1,8 @@
 import StoreCard from "../components/StoreCard";
 import imgAmazon from "../assets/coffee-amazon.png"
 import imgMixue from "../assets/dessert-mixue.png"
+import imgPong from "../assets/fastfood-pong.png"
+import imgTube from "../assets/coffee-tube.png"
 import ReviewCard from "../components/ReviewCard";
 import Carousel from "../components/Carousel";
 import CategoryPreview from "../components/CategoryPreview";
@@ -19,14 +21,14 @@ export default function Home() {
             title: "Tube Coffe",
             description: "Taste of Nature and comfort space.",
             category: "coffee",
-            image: imgAmazon,
+            image: imgTube,
         },
         {
             id: 3,
             title: "Pong",
             description: "Toast Chain No.1 in Cambodia Pong offers",
             category: "fastfood",
-            image: imgAmazon,
+            image: imgPong,
         },
         {
             id: 4,
@@ -68,7 +70,7 @@ export default function Home() {
             <Carousel />
             <h2 class="text-3xl font-bold mt-24 mx-auto text-center">Most Popular Place</h2>
             <p className="text-gray-400 mb-4">Choose place you interesting in our popular selections</p>
-            <div class="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-4 mx-auto mb-12 gap-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-4 mx-auto mb-12 gap-4 max-w-screen-xl">
                 {
                     stores.map(store => (
                         <StoreCard title={store.title} description={store.description} category={store.category} image={store.image} />

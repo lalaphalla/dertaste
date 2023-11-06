@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function StoreCard({id, title, description, category, image}) {
     return (
-        <div className="max-w-xs md:w-96 mx-auto bg-[#FEDEB4] border border-gray-200 rounded-3xl shadow">
+        <div className="max-w-xs mx-auto bg-[#FEDEB4] border border-gray-200 rounded-3xl shadow">
             <a href="#">
                 <img className="rounded-t-3xl w-full lg:h-72" src={image} alt="" />
             </a>
@@ -17,3 +17,4 @@ export default function StoreCard({id, title, description, category, image}) {
         </div>
     )
 }
+ 
