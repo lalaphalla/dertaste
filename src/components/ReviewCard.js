@@ -1,19 +1,22 @@
 import React from "react";
 import imgReview from "../assets/review1.png";
 import imgTube from "../assets/coffee-tube.png";
+import iconCoffee from "../assets/icons/icon-coffee.png"
+import iconPrice from "../assets/icons/icon-price.png"
+import iconDollar from "../assets/icons/icon-dollar.png"
 
 export default function ReviewCard({ userName, comment }) {
   return (
     <>
-      <div className="flex font-serif bg-[#F9FBE7]">
-        <div>
+      <div className="flex font-serif bg-[#F9FBE7] rounded-lg shadow">
+        <div className="pt-4 pl-2">
           <h4>Tube Coffee</h4>
-          <img src={imgTube} alt=".." />
+          <img src={imgTube} alt=".." className="rounded-xl"/>
         </div>
         <div>
         <div className="flex items-center p-4">
           <img src={imgReview} className="w-14 h-14" alt=".." />
-          <h5 className="font-bold">Heng LOEM</h5>
+          <h5 className="">Heng LOEM</h5>
         </div>
 
         <p className="pl-4 text-left">Good coffee tests, best service, and comfort space. </p>
@@ -27,15 +30,15 @@ export default function ReviewCard({ userName, comment }) {
           </div>
         </p>
 
-        <p>
-          Coffee <img src="." alt=".." />
+        <p className="text-left ml-4">
+        <img src={iconCoffee} alt=".." className="w-4 inline-block"/> Coffee 
         </p>
-        <div>
-          <img src="." alt=".." />
+        <div className="flex text-left ml-4 items-center">
+          <img src={iconPrice} alt=".." className="w-4 inline-block mr-2" />
           Price
-          <span>
-            <img src="." alt=".." />
-            <img src="." alt=".." />
+          <span className="ml-2">
+            <img src={iconDollar} alt=".." className="w-4 h-4 inline-block" />
+            <img src={iconDollar} alt=".." className="w-4 h-4 inline-block" />
           </span>
         </div>
         </div>

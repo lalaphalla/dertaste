@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function MyFooter() {
   return ( 
-        <footer class="mt-6">
+        <footer class="mt-10">
             <div class="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-4 gap-5 w-11/12 mx-auto">
                 <div>
                     <h4 class="text-3xl">Quick Link</h4>
