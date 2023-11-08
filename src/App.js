@@ -4,6 +4,7 @@ import MyNav from './components/MyNav';
 import MyFooter from './components/MyFooter';
 import Home from './pages';
 import Store from './pages/Store';
+import MyNav2 from './components/MyNav2';
 
 function App() {
   return (
@@ -20,7 +21,7 @@ function App() {
 function MainLayout() {
   return (
     <main>
-      <MyNav />
+      <MyNav2 /> 
       <Outlet />
       <MyFooter />
     </main>
