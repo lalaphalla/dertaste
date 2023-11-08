@@ -5,6 +5,7 @@ import MyFooter from './components/MyFooter';
 import Home from './pages';
 import Store from './pages/Store';
 import MyNav2 from './components/MyNav2';
+import Category from './pages/Category';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Route path="/" element={<MainLayout />}>
           <Route path="/" element={<Home />} />
           <Route path="/store" element={<Store />} />
+          <Route path="/category" element={<Category />} />
         </Route>
       </Routes>
     </div>

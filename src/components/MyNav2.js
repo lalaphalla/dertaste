@@ -9,10 +9,10 @@ function classNames(...classes) {
 }
 export default function MyNav2() {
   const navigation = [
-    { name: "Home", href: "#", current: true },
-    { name: "Store", href: "#", current: false },
-    { name: "Category", href: "#", current: false },
-    { name: "Blog", href: "#", current: false },
+    { name: "Home", href: "/", current: true },
+    { name: "Store", href: "/store", current: false },
+    { name: "Category", href: "/category", current: false },
+    { name: "Blog", href: "/blog", current: false },
   ];
 
   return (
