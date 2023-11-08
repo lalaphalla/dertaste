@@ -2,7 +2,7 @@ import React from "react";
 import { Fragment } from "react";
 import { Disclosure, Menu, Transition } from "@headlessui/react";
 import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline";
-import logo from '../assets/logo.png'
+import logo from "../assets/logo.png";
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
@@ -21,7 +21,7 @@ export default function MyNav2() {
         <>
           <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
             <div className="relative flex h-16 items-center justify-evenly">
-              <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
+              <div className="absolute inset-y-0 right-0 flex items-center sm:hidden">
                 {/* Mobile menu button*/}
                 <Disclosure.Button className="relative inline-flex items-center justify-center rounded-md p-2 text-gray-900 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
                   <span className="absolute -inset-0.5" />
@@ -34,15 +34,10 @@ export default function MyNav2() {
                 </Disclosure.Button>
               </div>
               <div className="flex flex-shrink-0 items-center text-xl">
-                  <img
-                    className="h-12 w-auto"
-                    src={logo}
-                    alt="Your Company"
-                  />
-                   <span className="ml-4 font-bold">dertase</span>
-                </div>
+                <img className="h-12 w-auto" src={logo} alt="Your Company" />
+                <span className="ml-4 font-bold">dertase</span>
+              </div>
               <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-center">
-                
                 <div className="hidden sm:ml-6 sm:block">
                   <div className="flex space-x-4">
                     {navigation.map((item) => (
@@ -64,18 +59,25 @@ export default function MyNav2() {
                 </div>
               </div>
 
-              <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-                {/* <button
+              <div>
+                <button
+                  type="button"
+                  class=" text-black bg-[#F9FBE7]  focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-12 md:mr-2 mb-2  "
+                >
+                  Login
+                </button>
+              </div>
+              {/* <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+                <button
                   type="button"
                   className="relative rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
                 >
                   <span className="absolute -inset-1.5" />
                   <span className="sr-only">View notifications</span>
                   <BellIcon className="h-6 w-6" aria-hidden="true" />
-                </button> */}
-
-                {/* Profile dropdown */}
-                {/* <Menu as="div" className="relative ml-3">
+                </button>
+ 
+                <Menu as="div" className="relative ml-3">
                   <div>
                     <Menu.Button className="relative flex rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
                       <span className="absolute -inset-1.5" />
@@ -138,12 +140,10 @@ export default function MyNav2() {
                       </Menu.Item>
                     </Menu.Items>
                   </Transition>
-                </Menu> */}
-                <button type="button" class="text-black bg-[#F9FBE7]  focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2  ">
-                    Login</button>
+                </Menu>
+                
 
-              </div>
-
+              </div> */}
             </div>
           </div>
           {/* small size menu */}
