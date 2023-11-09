@@ -9,8 +9,8 @@ import StoreReviewCard from "./StoreReviewCard";
 
 export default function StorePreview() {
   return (
-    <section className="flex max-w-screen-xl mx-auto ">
-      <div className="flex w-3/4">
+    <section className="flex flex-col md:flex-row max-w-screen-xl mx-auto ">
+      <div className="flex w-full md:w-3/4">
         <div className="mr-2">
           <img
             className="h-auto max-w-full rounded-lg"

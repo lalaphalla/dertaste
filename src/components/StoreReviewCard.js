@@ -2,7 +2,7 @@ import React from "react";
 
 export default function StoreReviewCard() {
   return (
-    <div className="bg-[#F9FBE7] p-4 text-left w-2/5 ml-4">
+    <div className="bg-[#F9FBE7] p-4 text-left w-full md:w-2/5 mt-2 md:ml-4">
       <h3 className="text-xl mb-2">Rating & Review</h3>
       <div className="flex">
         <p>4.0</p>

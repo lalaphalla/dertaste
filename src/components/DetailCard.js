@@ -2,7 +2,7 @@ import React from "react";
 
 export default function DetailCard() {
   return (
-    <div className="bg-primary-color pt-4 pl-4  text-left">
+    <div className="bg-primary-color pt-4 pl-4  text-left md:mr-4" >
       <h4 className="text-xl mb-3">Detail</h4>
       <p>Price Range</p>
       <p>8000 - 20000 riels</p>

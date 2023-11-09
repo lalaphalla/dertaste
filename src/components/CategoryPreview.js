@@ -2,7 +2,7 @@ import React from "react";
 import imgFastFood from "../assets/categoires/fast-food.png";
 import imgBeverage from "../assets/categoires/bubble-tea.png";
 import imgDessert from "../assets/categoires/ice-cream1.png";
-import imgBakery from "../assets/categoires/skewer.png";
+import imgBakery from "../assets/categoires/bakery.png";
 import iconFastFood from "../assets/icons/icon-fastfood.png";
 import iconBeverage from "../assets/icons/icon-drinking.png";
 import iconDessert from "../assets/icons/icon-dessert.png";
